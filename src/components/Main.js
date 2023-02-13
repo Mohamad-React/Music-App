@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 import styles from "./Main.module.css";
 
@@ -15,7 +15,7 @@ const MainView = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const result = await axios(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${selectedCountry}&limit=10&api_key=bf05f33037f09f10b5686827c0943ebd&format=json`);
+        const result = await axios.get(`https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${selectedCountry}&limit=10&api_key=bf05f33037f09f10b5686827c0943ebd&format=json`);
 
         if (result.data.topartists) {
           setTopArtists(result.data.topartists.artist);
@@ -28,7 +28,7 @@ const MainView = () => {
       setLoading(false);
 
     };
-
+   //The fetchData function is called every time the selectedCountry value changes
     fetchData();
   }, [selectedCountry]);
 
@@ -44,7 +44,7 @@ const MainView = () => {
         <div className={styles.MainViewheader}>
           <h1>Top Artists</h1>
           <select className={styles.MainViewselect} onChange={e => setSelectedCountry(e.target.value)} value={selectedCountry}>
-            <option value="Australia"><BsFillArrowDownCircleFill className={styles.arrow}/>Select a country</option>
+            <option value="Australia">Select a country</option>
             <option value="germany">Germany</option>
             <option value="United Kingdom">United Kingdom</option>
             <option value="Greece">Greece</option>
