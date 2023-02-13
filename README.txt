@@ -1,4 +1,4 @@
-In der API der Website https://www.last.fm/api ist das Hauptfoto der Sänger nicht für Toppartist verfügbar,
- und nur das Star-Emoticon-Foto ist für jeden Sänger verfügbar,
- obwohl es ein verfügbares Foto im gibt api im Zusammenhang mit dem Album,
- das ich in top5albums verwendet habe.
+In der Website-API https://www.last.fm/api ist das Hauptsängerfoto nicht für den Top-Performer verfügbar und
+ nur das Star-Emoticon-Foto ist für jeden Sänger verfügbar,
+ obwohl in der API ein Foto verfügbar ist. Es hängt mit dem Album zusammen,
+ das ich in den Top-5-Alben und im Side-by-Side-Vergleich verwendet habe.
