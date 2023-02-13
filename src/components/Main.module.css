@@ -1,0 +1,117 @@
+.MainView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background-color: #181419;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.MainViewheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.MainViewheader h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.MainViewselect {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-size: 18px;
+  color: #fff;
+  background-color: #191414;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.MainViewlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.MainViewlistitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.MainViewlistitem:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #fff;
+}
+
+.MainViewlistitem img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.MainViewlistitem h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.MainViewlistitem p {
+  font-size: 18px;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .MainViewheader {
+    margin-bottom: 10px;
+  }
+  
+  .MainViewselect {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .MainViewlistitem {
+    margin: 10px;
+    width: 80%;
+  }
+  
+  .MainViewlistitem h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .MainViewlistitem p {
+    font-size: 16px;
+  }
+  
+  .MainViewlistitem img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+
+

@@ -1,0 +1,80 @@
+ .artistsearch {
+    text-align: center;
+    
+  }
+  
+  .artistsearchtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0rem;
+  }
+  .search{
+    font-size: 30px;
+    color: black;
+    margin-left: 8px;
+    position: absolute;
+    margin-top: 28px;
+    
+  }
+  .artistsearchinput {
+    padding: 0.75rem 3rem;
+    font-size: 1.125rem;
+    
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+  
+  .artistsearcherror {
+    color: red;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+  }
+  
+  .artistsearchloading {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+  }
+  
+  .artistsearchlist {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .artistsearchitem {
+    margin-bottom: 1rem;
+  }
+  
+  .artistsearchlink {
+    color: rgb(234, 234, 236);
+    font-size: 1.125rem;
+    text-decoration: none;
+  }
+  @media (max-width: 600px) {
+    .artistsearch {
+      padding: 20px;
+    }
+    
+    .search {
+      margin-top: 20px;
+    }
+    
+    .artistsearchinput {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    
+    .artistsearchlist {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .artistsearchitem {
+      padding: 10px;
+      margin-bottom: 0.5rem;
+    }
+    
+    .artistsearchlink {
+      font-size: 1rem;
+    }
+  }
