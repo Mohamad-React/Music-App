@@ -1,7 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+
 import styles from "./Topfivealbum.module.css"
+
 const Topalbum = () => {
   const { mbid } = useParams();
   const [topAlbums, setTopAlbums] = useState([]);
@@ -11,7 +13,7 @@ const Topalbum = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const result = await axios(`http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&mbid=${mbid}&api_key=bf05f33037f09f10b5686827c0943ebd&format=json`);
+        const result = await axios(`https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&mbid=${mbid}&api_key=bf05f33037f09f10b5686827c0943ebd&format=json`);
     
         if (result.data.topalbums) {
           setTopAlbums(result.data.topalbums.album);

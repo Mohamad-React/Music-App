@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Topalbum from './TopfiveAlbum';
+
 import styles from "./Details.module.css";
-
-
+import Topalbum from './TopfiveAlbum';
 import Toptrackss from './Topfivetracks';
 
 const DetailView = () => {
@@ -19,7 +18,7 @@ const DetailView = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const result = await axios(`http://ws.audioscrobbler.com/2.0/?method=artist.getInfo&mbid=${mbid}&api_key=bf05f33037f09f10b5686827c0943ebd&format=json`);
+        const result = await axios(`https://ws.audioscrobbler.com/2.0/?method=artist.getInfo&mbid=${mbid}&api_key=bf05f33037f09f10b5686827c0943ebd&format=json`);
 
         if (result.data.artist) {
           setArtist(result.data.artist);
